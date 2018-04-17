@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:300,400,600,700');
+
+p {
+    margin-bottom: 1.3em;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Lora', Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    margin: .25em 0;
+}
+
+h1 {
+  font-size: 3.157em;
+}
+
+h2 {
+    font-size: 2.369em;
+}
+
+h3 {
+    font-size: 1.777em;
+}
+
+h4 {
+    font-size: 1.333em;
+}
+
+small, .font_small {
+    font-size: 0.75em;
+}
+
+.h1, .h2, .h3, .h4 {
+    font-weight: 700;
+}
+
+.h1 {
+    font-size: 4em;
+  }
+  
+  .h2 {
+      font-size: 3em;
+  }
+  
+  .h3 {
+      font-size: 2em;
+  }
+  
+  .h4 {
+      font-size: 1.25em;
+  }

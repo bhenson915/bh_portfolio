@@ -22,6 +22,25 @@ RESPONSIVE BREAKPOINTS
 NAVIGATION STYLES
 **********************/
 
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  align-content: space-around;
+  justify-content: center;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+
 .brand a{
   color: #ffffff;
   text-decoration: none;
