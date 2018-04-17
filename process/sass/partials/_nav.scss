@@ -1,11 +1,11 @@
 /*********************
 VARIABLES
 **********************/
-$link-color:$orange;
-$link-hover:#00aedb;
+$link-color:#ffffff;
+$link-hover: $orange;
 $link-vertical-padding:20px;      /*Controls Menu top & bottom padding*/
 $link-horizontal-padding:25px;    /*Contols Menu left & right padding*/
-$menu-background: white;        /*Control Menu Color Scheme*/
+$menu-background: transparent;        /*Control Menu Color Scheme*/
 
 /*********************
 RESPONSIVE BREAKPOINTS
@@ -21,10 +21,20 @@ RESPONSIVE BREAKPOINTS
 /*********************
 NAVIGATION STYLES
 **********************/
+
+.brand a{
+  color: #ffffff;
+  text-decoration: none;
+  &:hover{
+    color: $orange;
+  }
+}
+
 nav {
   width:100%;
-  background: linear-gradient(to bottom, $menu-background 0%, darken($menu-background,7%) 100%);
-  box-shadow:0px 2px 2px rgba(0,0,0,.35);
+  background: $menu-background;
+  position: absolute;
+  top:0;
   
   @include breakpoint(715) {
     margin:65px 0 0 0;
@@ -37,8 +47,10 @@ nav {
 
 nav ul {
   margin:0 auto;
-  width:1100px;
   list-style:none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   
    @include breakpoint(715) {
       margin:0;
@@ -113,6 +125,8 @@ nav ul {
       font-size:.9em;
       box-shadow:0px 2px 2px rgba(0,0,0,.5);
       transition: all 0.3s ease;
+      display: flex;
+        flex-direction: column;
       
       @include breakpoint(715) {
         max-height:0;
@@ -127,6 +141,7 @@ nav ul {
       li {
         float:none;
         margin:0;
+        
 
         @include breakpoint(715) {
           margin:0;
@@ -135,7 +150,7 @@ nav ul {
         a {
           display:block;
           text-align:left;
-          padding:$link-vertical-padding/1.5 $link-horizontal-padding/1.5;
+          padding:$link-vertical-padding/1.5;
           margin:0;
           border-right:none;
           border-top:1px solid darken($menu-background,12%);;
