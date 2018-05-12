@@ -1,12 +1,17 @@
 .hero-container {
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url("../img/hero-index2.jpg");
+    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url("../img/hero1.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-content: center;
     align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    width: 80%;
 }
 
 .hero-title {
@@ -19,4 +24,14 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.center img{
+    width: 300px;
+    height: auto;
+}
+
+.slider-nav img {
+    width: 50px;
+    height: auto;
 }
