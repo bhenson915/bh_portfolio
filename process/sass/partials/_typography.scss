@@ -1,34 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900|Seaweed+Script');
+
+@import url("https://use.typekit.net/qva0fri.css");
+// @import url('https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900|Seaweed+Script');
 
 p {
     margin-bottom: 1.3em;
-}
-
-h1, h2, h3, h4 {
-    font-family: 'Raleway', Arial, sans-serif;
-    font-weight: 400;
-    line-height: 1;
-    margin: .25em 0;
-}
-
-h1 {
-  font-size: 3.157em;
-}
-
-h2 {
-    font-size: 2.369em;
-}
-
-h3 {
-    font-size: 1.777em;
-}
-
-h4 {
-    font-size: 1.333em;
-}
-
-small, .font_small {
-    font-size: 0.75em;
 }
 
 .h1, .h2, .h3, .h4 {
@@ -54,3 +29,32 @@ small, .font_small {
   .script {
       font-family: 'Seaweed Script', cursive;
   }
+
+  .ampersand {
+    font-style: italic;
+    font-weight: 400; }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "freight-display-pro";
+    color: #32434F; }
+  
+  h1 {
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 400;
+    margin: 5px 0 15px 0; }
+  
+  h1 + h2 {
+    margin-top: 30px; }
+  
+  h2 {
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 500;
+    margin: 45px 0 0 0; }
+
+h3 {
+    font-family: "freight-text-pro";
+    font-size: 22px;
+    font-weight: 700;
+    margin: 30px 0 0 0; }

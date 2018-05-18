@@ -50,9 +50,11 @@ NAVIGATION STYLES
 }
 
 nav {
-  width:100%;
+  width:80%;
   background: $menu-background;
   position: absolute;
+  display: flex;
+  justify-content: space-between;
   top:0;
   
   @include breakpoint(715) {
@@ -65,10 +67,10 @@ nav {
 }
 
 nav ul {
-  margin:0 auto;
+  margin:0;
   list-style:none;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   
    @include breakpoint(715) {
