@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $('#btn-menu').click(function(){
-        $(this).toggleClass('fancy')
+        $(this).toggleClass('fancy');
         $('.navigation').toggle('slide', function(){
             if ($(this).is(':visible'))
             $(this).css('display','flex');
@@ -9,5 +9,6 @@ $(document).ready(function(){
             if ($(this).is(':visible'))
             $(this).css('display','flex');
         });
+        $('.fa-bars').toggleClass('fa-times', 1000, "easeOutSine");
     });
 });
