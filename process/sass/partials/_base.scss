@@ -19,6 +19,10 @@ a {
     border-bottom: 1px solid #1087dd; 
 }
 
+.link-no-decoration{
+  border-bottom: 1px solid transparent;
+}
+
 p {
     font-family: "freight-text-pro";
     font-size: 18px;
