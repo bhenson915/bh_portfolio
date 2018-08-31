@@ -1,0 +1,194 @@
+a {
+    text-decoration: none;
+    color: $mute;
+    border-bottom: none;
+    transition: all 400ms;
+    &:hover {
+        color: $citrus;
+        border-top: 1px solid $citrus;
+        
+    }
+}
+
+.header {
+    // background-image: url('../img/hero2.jpg');
+    background: $mute;
+    background-size: cover;
+    background-position: top;
+    height: 600px;
+    transform: skewY(5deg);
+    box-shadow: 5px 10px 18px #888888;
+    border-top: 2px solid $citrus;
+    border-bottom: 2px solid $citrus;
+
+    .header-container {
+        transform: skewY(-5deg);
+    }
+}
+
+.main-section {
+    height: 70vh;
+    width: 100%;
+    padding: 5em;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 0 5em;
+    font-family: 'Lato', sans-serif;
+}
+
+.main-section-content {
+    flex-basis: 50%;
+}
+
+.main-section-image {
+    flex-basis: 50%;
+    text-align: right;
+    img{
+        border-radius: 50%;
+        width: 50%;
+        border: 1px solid $mute;
+        box-shadow: 0 0px 5px rgba(0, 0, 0, 0.07);
+    }
+}
+
+.navigation-container {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    width: 100%;
+    padding: 1em 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+    .logo {
+        min-width: 50px;
+    }
+
+
+    .main-nav {
+        display: flex;
+
+        li {
+            margin-right: 2rem;
+            list-style-type: none;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+            
+            a {
+                text-decoration: none;
+                color: $mute;
+                border-bottom: none;
+                transition: all 400ms;
+                &:hover {
+                    color: $citrus;
+                    border-top: 1px solid $citrus;
+                    
+                }
+            }
+
+            .button {
+                background: $citrus;
+                padding: 1em 2em;
+                border-radius: 30px;
+                width: 75px;
+                color: #ffffff;
+                &:hover {
+                    background: lighten($citrus, 5%);
+                    color: #ffffff;
+                    border-top: none;
+                }
+            }
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            // background-color: #ffffff;
+            min-width: 160px;
+            border-left: 1px solid $mute;
+            padding: 12px 16px;
+            z-index: 1;
+        }
+        
+        #drop-portfolio:hover .dropdown {
+            display: block;
+        }
+    }
+}
+
+// Mobile Navigation
+
+.mobile-nav {
+    position: fixed;
+    width: 100%;
+    padding: 2.5em 2em;
+    display: none;
+    justify-content: center;
+    z-index: 1000;
+    top:0;
+    right: 0;
+    background: #32434F;
+    border-bottom: 3px solid $citrus;
+    box-sizing: border-box;
+    h1 {
+        line-height: 35px;
+        font-size: 24px;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        margin: 0;
+    }
+    h2 {
+        font-size: 18px;
+        text-transform: uppercase;
+        margin: 0;
+    } 
+    .mobile-nav-list {
+        margin: 0;
+        list-style-type: none;
+        padding: 0;
+        display: none;
+        align-self: center;
+        text-align: center;
+        li {
+            margin-right: 2em;
+        }
+    }
+
+   
+}
+
+#btn-menu {
+    display: none;
+}
+
+@media screen and (max-width: 800px){
+    .nav-list {
+        display: none;
+    }
+
+    .mobile-nav-list{
+        flex-direction: column;
+    }
+
+    #btn-menu {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin-right: 4%;
+        margin-top: 2.5em;
+        z-index: 2000;
+        cursor: pointer;
+        transition: all 100ms ease-in-out;
+        text-shadow: inset 0px 0px 2px #ffffff;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
