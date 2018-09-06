@@ -8,7 +8,7 @@
     .logo-link {
         border-bottom: none;
         margin-right: 2em;
-        border-right: inset 1px solid $orange;
+        border-right: inset 1px solid $citrus;
         box-sizing: border-box;
     }
     .logo{
@@ -18,7 +18,7 @@
     h1 {
         line-height: 35px;
         font-size: 24px;
-        color: $blue;
+        color: $mute;
         text-transform: uppercase;
         letter-spacing: 5px;
         margin: 0;
@@ -31,7 +31,7 @@
 }
 
 .classy {
-    color: $orange;
+    color: $citrus;
     font-weight: 600;
     font-size: 14px;
     font-family: "proxima-nova", sans-serif;
@@ -49,6 +49,7 @@
     margin-top: -150px;
     width: 600px;
     height: auto;
+    align-self: center;
     z-index: 1000;
     position: absolute;
 }
@@ -83,14 +84,14 @@
         align-content: center;
         padding: 2%;
         transition: 300ms all ease-in-out;
-        border-right: 1px solid $blue;
+        border-right: 1px solid $mute;
         box-sizing: border-box;
         button {
           margin: 0 auto;
           width: 30em;
         }
         i {
-            color: $blue;
+            color: $mute;
         }
         &:last-child{
             border-right: none;
@@ -99,7 +100,7 @@
             // transform: scale(1.1, 1);
             // transform-origin: 0% 50%;
             flex-basis: 30%;
-            background:$blue;
+            background:$mute;
             padding: 2% 4%;
             z-index: 100;
             h2, p, i {
@@ -111,7 +112,7 @@
     @media screen and (max-width: 1140px){
       .services-content{
         padding: 10%;
-        border-bottom: 1px solid $blue;
+        border-bottom: 1px solid $mute;
         &:first-of-type{
           border-top: 1px solid transparent;
         }
@@ -148,7 +149,7 @@
       font-weight: 600;
       line-height: 35px;
       font-size: 24px;
-      color: $blue;
+      color: $mute;
       text-transform: uppercase;
       letter-spacing: 5px;
       margin: 0; }
@@ -162,7 +163,7 @@
   
   footer {
     text-align: center;
-    background: $blue;
+    background: $mute;
     color: white;
     border-top: 1px solid #e8e7e3;
     padding: 40px 0 60px 0; 
@@ -204,7 +205,7 @@
       margin-left: 60px;
       font-size: 18px; }
     nav ul a {
-      color: $blue;
+      color: $mute;
       text-transform: uppercase; }
 
 
@@ -217,8 +218,8 @@
         z-index: 1000;
         top:0;
         right: 0;
-        background: $blue;
-        border-bottom: 3px solid $orange;
+        background: $mute;
+        border-bottom: 3px solid $citrus;
         box-sizing: border-box;
         h1 {
             line-height: 35px;
@@ -266,7 +267,7 @@
         transition: all 300ms ease-in-out;
         &:hover {
             border-bottom: 1px solid white;
-            color: $orange;
+            color: $citrus;
         }
     }
 
@@ -275,7 +276,7 @@
     }
 
     .fancy {
-        color: $orange;
+        color: $citrus;
     }
 
     // #btn-menu {
@@ -295,7 +296,7 @@
   
   #intro {
     text-align: center;
-    color: $blue;
+    color: $mute;
     max-width: 1160px;
     margin: 0 auto 100px;
     padding: 60px 0; }
@@ -445,7 +446,7 @@
     font-family: "proxima-nova", sans-serif;
     font-size: 14px;
     line-height: 22px;
-    color: $blue; }
+    color: $mute; }
     .metadata h2 {
       margin: 0; }
     .metadata div {
@@ -457,7 +458,7 @@
       font-family: "proxima-nova", sans-serif;
       font-size: 14px;
       line-height: 22px;
-      color: $blue; }
+      color: $mute; }
     .metadata ul {
       margin: 0;
       padding: 0; }

@@ -49,7 +49,7 @@ p {
 }
 
 .eyebrow {
-    color: $orange;
+    color: $citrus;
     font-weight: 600;
     font-size: 14px;
     font-family: "proxima-nova", sans-serif;
@@ -59,7 +59,7 @@ p {
   
   .stats-number {
     display: block;
-    color: $orange;
+    color: $citrus;
     font-family: "freight-display-pro";
     margin: 20px 0 0 0;
     font-size: 70px;
@@ -76,11 +76,11 @@ p {
     margin: 10px 0; }
   
   .tag {
-    color: $orange;
+    color: $citrus;
     font-size: 12px;
     font-weight: 500;
     border-radius: 6px;
-    border: 1px solid $orange;
+    border: 1px solid $citrus;
     display: inline-block;
     padding: 2px 10px; }
   
@@ -103,7 +103,7 @@ p {
     color: #32434F;
     letter-spacing: 2px;
     padding: 25px 35px 25px 35px;
-    border: 2px solid $orange;
+    border: 2px solid $citrus;
     display: inline-block;
     background: rgba(255, 255, 255, 0.5); }
   
@@ -121,9 +121,9 @@ p {
     color: white;
     letter-spacing: 2px;
     padding: 25px 35px 25px 35px;
-    border: 2px solid $orange;
+    border: 2px solid $citrus;
     display: inline-block;
-    background: $orange; }
+    background: $citrus; }
 
     .container {
         clear: both;
@@ -147,7 +147,9 @@ p {
         padding-top: 100px;
         padding-bottom: 80px;
         padding-left: 10%;
-        padding-right: 10%; }
+        padding-right: 10%; 
+        background: $mute;
+      }
         .container-content:before, .container-content:after {
           content: " ";
           display: table; }
