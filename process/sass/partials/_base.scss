@@ -48,6 +48,10 @@ p {
     height: 50px;
 }
 
+.mute {
+  background: $mute;
+}
+
 .eyebrow {
     color: $citrus;
     font-weight: 600;
@@ -147,8 +151,7 @@ p {
         padding-top: 100px;
         padding-bottom: 80px;
         padding-left: 10%;
-        padding-right: 10%; 
-        background: $mute;
+        padding-right: 10%;
       }
         .container-content:before, .container-content:after {
           content: " ";
