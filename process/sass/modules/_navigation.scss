@@ -103,7 +103,7 @@ a {
   transition: all 400ms;
   &:hover {
     color: $citrus;
-    border-top: 1px solid $citrus;   
+      
   }
 }
 
@@ -195,8 +195,7 @@ a {
                 transition: all 400ms;
                 &:hover {
                     color: $citrus;
-                    border-top: 1px solid $citrus;
-                    
+                                       
                 }
             }
 
