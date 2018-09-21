@@ -1,6 +1,6 @@
 .head {
     // width: 100%;
-    font-family: "freight-text-pro", serif;
+    font-family: "Lato", sans-serif;
     padding: 2em;
     border-bottom: 1px solid #eeeeee;
     display: flex;
@@ -586,14 +586,7 @@
     border-radius: 30px;
     margin: 1em;
     overflow: hidden;
-    .principle-num{
-      position: absolute;
-      top: .5rem;
-      right: 0;
-      font-size: 6em;
-      color: rgba($mute, 0.25);
-      transform: rotate(-15deg);
-    }
+    
     .rotate {
       transform: rotate(-15deg);
       border: 1px solid $cloudy;
@@ -601,6 +594,15 @@
       height: 30px;
     }
   }
+}
+
+.principle-num{
+  position: absolute;
+  top: .5rem;
+  right: 0;
+  font-size: 6em;
+  color: rgba($mute, 0.25);
+  transform: rotate(-15deg);
 }
 
 .overlay {

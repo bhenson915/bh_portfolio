@@ -1,7 +1,26 @@
 button {
     max-width: 20em;
     padding: .5em 2em;
-    background: $grey;
-    color: $orange;
+    background: $mute;
+    color: $citrus;
     border-radius: 5px;
+}
+
+.button {
+    background: $citrus;
+    padding: 1em 2em;
+    border-radius: 30px;
+    width: 75px;
+    color: #ffffff;
+    border-top: 1px solid transparent;
+    &:hover {
+        background: $citrus-comp;
+        color: #ffffff;
+        border-top: none;
+    }
+    
+}
+
+.btn-margin {
+    margin: 2em 0;
 }

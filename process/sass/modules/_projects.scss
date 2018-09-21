@@ -1,0 +1,12 @@
+.project-content {
+    position: relative;
+    margin-top: 2em;
+    min-height: 300px;
+    border-bottom: 1px solid $mute;
+    &:first-of-type {
+        margin-top: 3em;
+    }
+    img {
+        max-width: 500px;
+    }
+}
