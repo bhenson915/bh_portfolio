@@ -1,161 +1,3 @@
-/* ========== Variables ==========*/
-
-//Colors
-
-$colors: (
-  citrus: #F15A29,
-  mute: #363B44,
-  cloudy: #5E6472
-);
-
-//or
-
-$citrus: #F15A29;
-$mute: #363B44;
-$cloudy: #5E6472;
-
-//lists
-
-$icons: (
-  home: "f015",
-  about: "f2bd",
-  portfolio: "f085"
-);
-
-$small: (2em, 1.8em, 1.6em, 1.4em, 1.2em, 1em);
-
-$large: (4em, 3.6em, 3.2em, 2.8em, 2.4em, 2em);
-
-// Breakpoints
-$breakpoint-small: 600px;
-$breakpoint-med-small: 960px;
-$breakpoint-med: 1175px;
-
-//Typography
-
-
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Seaweed+Script" rel="stylesheet');
-
-p {
-    margin-bottom: 1.3em;
-  font-family: 'Lato', sans-serif;
-}
-
-.h1, .h2, .h3, .h4 {
-    font-weight: 700;
-}
-
-.h1 {
-    font-size: 4em;
-  }
-  
-  .h2 {
-      font-size: 3em;
-  }
-  
-  .h3 {
-      font-size: 2em;
-  }
-  
-  .h4 {
-      font-size: 1.25em;
-  }
-
-  .script {
-      font-family: 'Seaweed Script';
-  }
-
-  .ampersand {
-    font-style: italic;
-    font-weight: 400; }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Lato', sans-serif;
-    color: #32434F; }
-  
-  h1 {
-    font-size: 50px;
-    line-height: 50px;
-    font-weight: 400;
-    margin: 5px 0 15px 0; }
-  
-  h1 + h2 {
-    margin-top: 30px; }
-  
-  h2 {
-    font-size: 30px;
-    line-height: 45px;
-    font-weight: 500;
-    margin: 45px 0 0 0; }
-
-h3 {
-    font-family: 'Lato', sans-serif;
-    font-size: 22px;
-    font-weight: 700;
-    margin: 30px 0 0 0; }
-
-//End of Typography
-
-a {
-  text-decoration: none;
-  color: $mute;
-  border-bottom: none;
-  transition: all 400ms;
-  &:hover {
-    color: $citrus;
-      
-  }
-}
-
-.social {
-    margin-right: 1em;
-}
-
-.header {
-    background: $mute;
-    background-size: cover;
-    background-position: top;
-    height: 600px;
-    transform: skewY(5deg);
-    box-shadow: 5px 10px 18px #888888;
-    border-top: 2px solid $citrus;
-    border-bottom: 2px solid $citrus;
-
-    .header-container {
-        transform: skewY(-5deg);
-    }
-}
-
-.main-section {
-    height: 100%;
-    min-height: 70vh;
-    width: 100%;
-    padding: 5em 5em 200px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: 'Lato', sans-serif;
-    // background-color: #29d3b2;
-    background-image: url(http://portfolio.bryandavid.uta.cloud/img/tools-white.png);
-    background-position: top bottom;
-    background-attachment: fixed;
-    overflow: hidden;
-}
-
-.main-section-content {
-    flex-basis: 50%;
-}
-
-.main-section-image {
-    flex-basis: 50%;
-    text-align: right;
-    img{
-        width: 60%;
-        max-height: 60%;
-    }
-}
-
 .navigation-container {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
@@ -165,7 +7,9 @@ a {
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
-
+    // position: fixed;
+    max-width: 2160px;
+    background: rgba(255,255,255,.5);
     .logo {
         min-width: 50px;
     }
@@ -252,6 +96,7 @@ a {
     .mobile-nav-list {
         margin: 0;
         width: 100%;
+        height: 100vh;
         list-style-type: none;
         padding: 0;
         display: none;
@@ -321,84 +166,5 @@ a {
     }
 }
 
-.container {
-        clear: both;
-        border-top: 1px solid #EBECEE;
-        border-top: 1px solid #ECE5DD;
-        border-top: 1px solid #e8e7e3;
-        margin: 0 auto;
-        padding: 0;
-        width: 100%;
-        box-sizing: border-box;
-        background: white; }
-        .container:before, .container:after {
-          content: " ";
-          display: table; }
-        .container:after {
-          clear: both; }
 
-#project-work {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 100%;
-}
 
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-a.project-card-alternate:hover {
-    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.07);
-    transform: translate(0, -10px);
-    transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1); }
-  
-  .project-card-alternate {
-    transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
-    border: 1px solid #e8e7e3;
-    display: block;
-    width: 30%;
-    box-sizing: border-box;
-    margin-right: 4%;
-    float: left;
-    background-color: white;
-    box-sizing: border-box;
-    margin-bottom: 40px;
-    float: left; }
-    .project-card-alternate:nth-child(3n) {
-      margin-right: 0; }
-    @media screen and (max-width: 1150px) {
-      .project-card-alternate {
-        width: 48%; }
-        .project-card-alternate:nth-child(odd) {
-          margin-right: 4%; }
-        .project-card-alternate:nth-child(even) {
-          margin-right: 0; } }
-    @media screen and (max-width: 768px) {
-      .project-card-alternate {
-        width: 100%;
-        margin-right: 0;
-        margin-left: 0; } 
-}
-    .project-card-alternate a {
-      border: none;
-      display: block; }
-    .project-card-alternate h2 {
-      margin-bottom: 15px;
-      font-weight: 600; }
-    .project-card-alternate div.text-content {
-      padding: 0;
-      text-align: left; }
-      .project-card-alternate div.text-content .content {
-        padding: 20px 20px 0 20px; }
-    .project-card-alternate .footer {
-      border-top: 1px solid #F3F0EE;
-      padding: 5px 20px; }
-    .project-card-alternate .eyebrow {
-      font-size: 12px; }
-    .project-card-alternate .tag {
-      font-size: 12px;
-      border: none;
-      background: #F8F8F8;
-      color: #97A0A7; }

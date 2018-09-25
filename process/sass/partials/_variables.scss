@@ -8,6 +8,13 @@ $mute: #363B44;
 $mute-comp: complement($mute);
 $cloudy: #5E6472;
 
+.citrus {
+    color: $citrus;
+}
+.white {
+    color: white;
+}
+
 //lists
 
 $small: (2em, 1.8em, 1.6em, 1.4em, 1.2em, 1em);

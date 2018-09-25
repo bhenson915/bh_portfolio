@@ -7,18 +7,20 @@
 @import "partials/grid";
 @import "partials/buttons";
 // @import "partials/interface";
-// @import "partials/typography";
+@import "partials/typography";
 // @import "partials/mixins";
 // @import "partials/nav";
 // ...
 
 //Modules
 
-// @import "modules/hero";
+@import "modules/hero";
 @import "modules/head";
-// @import "modules/footer";
-// @import "modules/about";
+@import "modules/footer";
+@import "modules/about";
 @import "modules/navigation";
 @import "modules/test";
 @import "modules/projects";
+@import "modules/modal.scss";
+@import "modules/lightbox.scss";
 // @import "modules/map";
