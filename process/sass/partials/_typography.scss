@@ -1,11 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet');
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+@import url("https://use.typekit.net/qva0fri.css");
 
 
 p {
     margin-bottom: 1.3em;
-  font-family: 'Lato', sans-serif;
+    font-family: 'Europa', sans-serif;
 }
 
 .h1, .h2, .h3, .h4 {
@@ -38,13 +39,15 @@ p {
   
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Lato', sans-serif;
-    color: #32434F; }
+    color: #32434F; 
+}
   
   h1 {
     font-size: 50px;
     line-height: 50px;
-    font-weight: 400;
-    margin: 5px 0 15px 0; }
+    font-weight: 700;
+    margin: 5px 0 15px 0; 
+}
   
   h1 + h2 {
     margin-top: 30px; }

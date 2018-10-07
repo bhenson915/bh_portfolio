@@ -502,7 +502,8 @@
   }
 }
 
-.principle-card:hover .overlay {
+.principle-card:hover .overlay,
+.principle-card:focus .overlay {
   display: flex;
   justify-content: center;
   align-items: center;
