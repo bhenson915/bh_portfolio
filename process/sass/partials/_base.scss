@@ -59,6 +59,13 @@ p {
   background: $mute;
 }
 
+.white-text {
+  color: white;
+  h1, h2, h3, h4, h5, h6, p {
+    color: white;
+  }
+}
+
 .eyebrow {
     color: $citrus;
     font-weight: 600;
