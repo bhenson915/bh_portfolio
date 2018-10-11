@@ -15,39 +15,44 @@
 </head>
 <body>
 
-    <div class="navigation-container">
-        <div class="logo" id="logo">
-            <a href="index.html"><img src="http://portfolio.bryandavid.uta.cloud/img/bh_logo_orange.png" alt="Bryan Henson's Logo"></a>
-        </div>
-        <div class="nav-list">
-            <ul class="main-nav">
-                <li><a href="index.html"><i class="fas fa-home"></i><ion-icon name="airplane"></ion-icon></a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="about.html">Skills</a></li>
-                <li id="drop-portfolio"><a href="portfolio.html" >Portfolio</a>
-                    <ul class="dropdown">
-                        <li><a href="projects/front.html">Front-End Development</a></li>
-                        <li><a href="#">Branding</a></li>
-                        <li><a href="photography.html">Photography</a></li>
-                    </ul>
-                </li>
-                <li><a href="#" class="button" id="contact-btn">Contact</a></li>
-            </ul>
-        </div>
-        <i id="btn-menu" class="fas fa-bars"></i>
-    </div>
+    
 
     <section class="main-section">
-        <div class="main-section-content">
-            <h1>Bryan Henson</h1>
-            <h3 class="citrus">Front-End Developer</h3>
-                    <p>I am a multi-disciplinary developer with a focus on front-end design and development based in the Dallas / Fort Worth area</p>
-                <a href="about.html" class="button">Learn More</a>
+            <div class="navigation-container">
+                    <div class="logo" id="logo">
+                        <a href="index.html"><img src="http://portfolio.bryandavid.uta.cloud/img/bh_logo_orange.png" alt="Bryan Henson's Logo"></a>
+                    </div>
+                    <div class="nav-list">
+                        <ul class="main-nav">
+                            <li><a href="index.html"><i class="fas fa-home"></i><ion-icon name="airplane"></ion-icon></a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="about.html">Skills</a></li>
+                            <li id="drop-portfolio"><a href="portfolio.html" >Portfolio</a>
+                                <ul class="dropdown">
+                                    <li><a href="projects/front.html">Front-End Development</a></li>
+                                    <li><a href="#">Branding</a></li>
+                                    <li><a href="photography.html">Photography</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="button" id="contact-btn">Contact</a></li>
+                        </ul>
+                    </div>
+                    <i id="btn-menu" class="fas fa-bars"></i>
+                </div>
+        <div class="main-section-container">
+            <div class="main-section-content">
+                <h1>Bryan Henson</h1>
+                <h3 class="citrus">Front-End Developer</h3>
+                        <p>I am a multi-disciplinary designer with a focus on front-end design and development based in the Dallas / Fort Worth area</p>
+                    <a href="about.html" class="button">Learn More</a>
+            </div>
+            <div class="main-section-image">
+                    <img src="img/mockup2.png" alt="">
+            </div>
+            
         </div>
 
-        <div class="main-section-image">
-            <img src="img/mockup2.png" alt="">
-        </div>
+        
     </section>
 
     <section id='project-work' class="container">
@@ -77,10 +82,9 @@
         </div>
     </section>
 
-    <section class="container">
+    <section class="container" id="case-studies">
         <div class="container-content center tools">
             <span class="fancy">Selected Case Studies</span>
-            <span class="sub-links center"><a href="#ux-sort" id="#ux-sort">User Experience</a> | <a href="#web-sort" id="web-sort">Web Design</a> | <a href="#graphic-sort" id="graphic-sort">Graphic Design</a></span>
             <div class="projects" id="projects">
                 <a href="projects/embark.html" class="project-card-alternate" data-id='ux'>
                     <img src="http://portfolio.bryandavid.uta.cloud/img/embark.jpeg" />
@@ -123,53 +127,6 @@
                         <div class="footer">
                             <p class="caption">
                                 <span class="tag">PHP</span>
-                                <span class="tag">Web Design</span>
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="ux/embark.html" class="project-card-alternate" data-id='ux'>
-                    <img src="http://portfolio.bryandavid.uta.cloud/img/martha.jpg" />
-                    <div class="text-content">
-                        <div class="content">
-                            <span class="eyebrow">EMBARK | TRAVEL SERVICES</span>
-                            <h2>User Experience</h2>
-                        </div>
-                        <div class="footer">
-                            <p class="caption">
-                                <span class="tag">UX</span>
-                                <span class="tag">Web Design</span>
-                                <span class="tag">Logo Design</span>
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="ux/embark.html" class="project-card-alternate" data-id='ux'>
-                    <img src="http://portfolio.bryandavid.uta.cloud/img/liftVR.jpg" />
-                    <div class="text-content">
-                        <div class="content">
-                            <span class="eyebrow">LiftVR | Virtual Reality Therapy</span>
-                            <h2>User Experience</h2>
-                        </div>
-                        <div class="footer">
-                            <p class="caption">
-                                <span class="tag">UX</span>
-                                <span class="tag">Web Design</span>
-                                <span class="tag">Logo Design</span>
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="ux/embark.html" class="project-card-alternate" data-id='ux'>
-                    <img src="http://portfolio.bryandavid.uta.cloud/img/jgracesalon.jpg" />
-                    <div class="text-content">
-                        <div class="content">
-                            <span class="eyebrow">JGRACE SALON</span>
-                            <h2>SEO</h2>
-                        </div>
-                        <div class="footer">
-                            <p class="caption">
-                                <span class="tag">SEO</span>
                                 <span class="tag">Web Design</span>
                             </p>
                         </div>
@@ -261,15 +218,24 @@
     </div>
 
     <footer id="footer">
-        <div class="col-4">
+        <div class="col-2">
+            <h4 class="citrus">Popular Links</h4>
+
+            <ul>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Embark</a></li>
+                <li><a href="#">Fish Creek</a></li>
+            </ul>
+        </div>
+        <div class="col-2 center">
+            <h4 class="citrus">Find Me</h4>
+        </div>
+        <div class="col-2">
             
         </div>
-        <div class="col-4">
-            
-        </div>
-        <div class="col-4">
-            
-        </div>
+        <figure>
+            <img id="footer-logo" src="img/bh_logo_orange.png" alt="">
+        </figure>
     </footer>
 
     
