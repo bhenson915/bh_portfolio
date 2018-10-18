@@ -25,6 +25,11 @@
       display: block;
     }
   }
+
+  .projects-img {
+    height: 220px;
+    overflow: hidden;
+  }
   
   a.project-card-alternate:hover {
     box-shadow: 0 0px 5px rgba(0, 0, 0, 0.07);

@@ -15,27 +15,28 @@
 <body>
 
     <div class="navigation-container">
-        <div class="logo" id="logo">
-            <a href="index.html"><img src="http://portfolio.bryandavid.uta.cloud/img/bh_logo_orange.png" alt="Bryan Henson's Logo"></a>
+            <div class="logo" id="logo">
+                <a href="index.html"><img src="http://portfolio.bryandavid.uta.cloud/img/bh_logo_orange.png" alt="Bryan Henson's Logo"></a>
+            </div>
+            <div class="nav-list">
+                <ul class="main-nav">
+                    <li><a href="index.html"><i class="fas fa-home"></i><ion-icon name="airplane"></ion-icon></a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.html">Skills</a></li>
+                    <li id="drop-portfolio"><a href="portfolio.html" >Portfolio</a>
+                        <ul class="dropdown">
+                            <li><a href="portfolio.html">Development</a></li>
+                            <li><a href="#">Branding</a></li>
+                            <li><a href="photography.html">Photography</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="button" id="contact-btn">Contact</a></li>
+                </ul>
+            </div>
+            <i id="btn-menu" class="fas fa-bars"></i>
         </div>
-        <div class="nav-list">
-            <ul class="main-nav">
-                <li><a href="index.html"><i class="fas fa-home"></i><ion-icon name="airplane"></ion-icon></a></li>
-                <li><a href="about.html">About</a></li>
-                <li id="drop-portfolio"><a href="#" >Portfolio</a>
-                    <ul class="dropdown">
-                        <li><a href="#">Front-End Development</a></li>
-                        <li><a href="#">Branding</a></li>
-                        <li><a href="photography.html">Photography</a></li>
-                    </ul>
-                </li>
-                <li><a href="#" class="button" id="contact-btn">Contact</a></li>
-            </ul>
-        </div>
-        <i id="btn-menu" class="fas fa-bars"></i>
-    </div>
 
-    <section id='project-work' class="container">
+    <section class="container center">
         <div class="container-content mute">
             <span class="fancy">About Me</span>
             <div class="flex-grid">

@@ -33,7 +33,7 @@
                 <li><a href="about.html">Skills</a></li>
                 <li id="drop-portfolio"><a href="portfolio.html" >Portfolio</a>
                     <ul class="dropdown">
-                        <li><a href="projects/front.html">Front-End Development</a></li>
+                        <li><a href="portfolio.html">Development</a></li>
                         <li><a href="#">Branding</a></li>
                         <li><a href="photography.html">Photography</a></li>
                     </ul>
@@ -56,7 +56,7 @@
                     <img src="img/mockup2.png" alt="">
                 </div>
             </div>
-            <div class='icon-scroll'></div>
+            <!-- <div class='icon-scroll'></div> -->
         </div>
         <div class="section center">
             <div class="slide" data-anchor="slide1">
@@ -162,8 +162,12 @@
                 <div class="container-content center">
                     <span class="fancy">Selected Case Studies</span>
                     <div class="projects" id="projects">
+                        
                         <a href="projects/embark.html" class="project-card-alternate" data-id='ux'>
-                            <img src="img/travel10.jpg" />
+                            <div class="projects-img">
+                                    <img src="img/travel10.jpg" />
+                            </div>
+        
                             <div class="text-content">
                                 <div class="content">
                                     <span class="eyebrow">EMBARK | TRAVEL SERVICES</span>
@@ -179,7 +183,9 @@
                             </div>
                         </a>
                         <a href="projects/fishcreek.html" class="project-card-alternate" data-id='web'>
-                            <img src="http://fishcreek.bryandavid.uta.cloud/img/9.jpg" />
+                            <div class="projects-img">
+                                <img src="http://fishcreek.bryandavid.uta.cloud/img/9.jpg" />
+                            </div>
                             <div class="text-content">
                                 <div class="content">
                                     <span class="eyebrow">FISH CREEK | ANIMAL HOSPITAL</span>
@@ -194,7 +200,9 @@
                             </div>
                         </a>
                         <a href="projects/bff.html" class="project-card-alternate"data-id='graphic'>
-                            <img src="http://portfolio.bryandavid.uta.cloud/img/bff.jpeg" />
+                            <div class="projects-img">
+                                <img src="http://omega.uta.edu/~bdh3090/ctec4309/bff/img/homeBanner.jpeg" />
+                            </div>
                             <div class="text-content">
                                 <div class="content">
                                     <span class="eyebrow">BFF ASIAN BAR AND GRILL</span>
@@ -213,29 +221,6 @@
                 </div>
             </section>
         </div>
-        <div class="section">
-            <div class="category-container">
-                <div class="category-card">
-                    <div class="cover">
-                        <img src="img/content2.jpg" alt="">
-                    </div>
-                    <div class="category-title">
-                        <h1>UX</h1>
-                    </div>
-                </div>
-                <div class="category-card">
-                    <img src="img/mockup1.png" alt="">
-                    <div class="category-title">
-                    </div>
-                </div>
-                <div class="category-card">
-                        <img src="img/content1.jpg" alt="">
-                        <div class="category-title">
-                        </div>
-                    </div>
-            </div>
-        </div>
-    </div>
 
     <footer id="footer">
         <div class="col-2">
@@ -268,12 +253,12 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src='js/main.js'></script>
-    <script src="js/fullpage.js"></script>
+    <!-- <script src="js/fullpage.js"></script>
     <script>
         new fullpage('#fullpage', {
             sectionsColor: ['white', '#363B44', 'transparent', '#5E6472'],
             slidesNavigation: true
         });
-    </script>
+    </script> -->
 </body>
 </html>
