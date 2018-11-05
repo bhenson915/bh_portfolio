@@ -17,6 +17,7 @@
     text-align: center;
     width: 100%;
     background: $mute;
+    overflow: hidden;
   }
   
   .projects {
@@ -245,4 +246,75 @@
     &:hover {
       border: 1px solid $citrus;
     }
+}
+
+#projects-javascript{
+  padding-top: 100px;
+}
+
+.panels {
+  min-height:100vh;
+  overflow: hidden;
+  display: flex;
+}
+
+.panel {
+  background: #666666;
+  box-shadow:inset 0 0 0 5px rgba(255,255,255,0.1);
+  color:white;
+  text-align: center;
+  align-items:center;
+  transition:
+    font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+    flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+    background 0.2s;
+  font-size: 20px;
+  background-size:cover;
+  background-position:center;
+  flex: 1;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.panel1 { background-image:url(http://omega.uta.edu/~bdh3090/ctec2350/finalProject/images/Portfolio02.jpg);}
+.panel2 { background-image:url(http://omega.uta.edu/~bdh3090/ctec2350/finalProject/images/Portfolio04.jpg); }
+.panel3 { background-image:url(http://omega.uta.edu/~bdh3090/ctec2350/finalProject/images/Portfolio08.jpg); }
+.panel4 { background-image:url(http://omega.uta.edu/~bdh3090/ctec2350/finalProject/images/Portfolio10.jpg); }
+.panel5 { background-image:url(http://omega.uta.edu/~bdh3090/ctec2350/finalProject/images/Portfolio15.jpg); }
+.panel6 { background-image:url(https://source.unsplash.com/bRG2C0FAQEY/1500x1500); }
+.panel7 { background-image:url(https://source.unsplash.com/FlHdnPO6dlw/1500x1500); }
+.panel8 { background-image:url(https://source.unsplash.com/ZtxED1cpB1E/1500x1500); }
+.panel9 { background-image:url(https://source.unsplash.com/DmAKxLH0nhg/1500x1500); }
+.panel10 { background-image:url(https://source.unsplash.com/cLXoMUtGi0k/1500x1500); }
+
+/* Flex Items */
+.panel > * {
+  margin:0;
+  width: 100%;
+  transition:transform 0.5s;
+  flex: 1 0 auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel > *:first-child { transform: translateY(-100%); }
+.panel.open-active > *:first-child { transform: translateY(0); }
+.panel > *:last-child { transform: translateY(100%); }
+.panel.open-active > *:last-child { transform: translateY(0); }
+
+.panel p {
+  font-family: 'Kaushan Script', cursive;
+  text-shadow:0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+  font-size: 2em;
+}
+.panel p:nth-child(2) {
+  font-size: 4em;
+}
+
+.panel.open {
+  flex: 5;
+  font-size:40px;
 }

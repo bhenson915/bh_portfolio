@@ -17,20 +17,17 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/fullpage.css">
     <link href="https://unpkg.com/ionicons@4.4.2/dist/css/ionicons.min.css" rel="stylesheet">
 
 </head>
 <body>
     <div class="navigation-container">
         <div class="logo" id="logo">
-            <a href="index.html"><img src="http://portfolio.bryandavid.uta.cloud/img/bh_logo_orange.png" alt="Bryan Henson's Logo"></a>
+            <a href="index.html"><img src="img/bh_logo_orange.png" alt="Bryan Henson's Logo"></a>
         </div>
         <div class="nav-list">
             <ul class="main-nav">
                 <li><a href="index.html"><i class="fas fa-home"></i><ion-icon name="airplane"></ion-icon></a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="about.html">Skills</a></li>
                 <li id="drop-portfolio"><a href="portfolio.html" >Portfolio</a>
                     <ul class="dropdown">
                         <li><a href="portfolio.html">Development</a></li>
@@ -38,6 +35,8 @@
                         <li><a href="photography.html">Photography</a></li>
                     </ul>
                 </li>
+                <li><a href="about.html">About</a></li>
+                
                 <li><a href="#" class="button" id="contact-btn">Contact</a></li>
             </ul>
         </div>
@@ -58,207 +57,146 @@
             </div>
             <!-- <div class='icon-scroll'></div> -->
         </div>
-        <div class="section center">
-            <div class="slide" data-anchor="slide1">
                 <section id='project-work'>
                     <div class="container-content mute">
-                        <span class="fancy">About Me</span>
-                        <div class="flex-grid">
-                            <div class="col-3 about-img">
-                                <a href="assets/resume.pdf"><img src="img/Headshot.jpg" alt=""></a>
+                        <span class="fancy">Skills</span>
+                        <div class="flex-grid skills">
+                            <div class="col-2 gutter">
+                                <h3 >Designer</h3>
+                                <ul>
+                                    <li>UX/UI Design</li>
+                                    <li>Wireframing</li>
+                                    <li>Prototyping</li>
+                                    <li>User Centric Design</li>
+                                </ul>
+                                <h3 >Design Toolkit</h3>
+                                <ul>
+                                    <li>Qualtrics</li>
+                                    <li>User Testing</li>
+                                    <li>Adobe Creative Suite</li>
+                                    <li>Adobe XD</li>
+                                    <li>Figma</li>
+                                    <li>Invision</li>
+                                    <li>Sketch</li>
+                                    <li>Axure</li>
+
+                                </ul>
                             </div>
-                            <div class="col-3">
-                                <div class="about-content">
-                                    <h3>Hi there!</h3>
-                                    <p>I'm Bryan Henson a front-end developer based in the Dallas/Fort Worth area. I have over 10  years of experience in a design environment. I am graduating from the University of Texas at Arlington's Communication Technology program in December of 2018.</p>
-                                    <p>I am passionate about front-end architecture, performance, scalable code and empathetic design practices.</p><br>
-                                    <a href="about.html" class="button">Learn More</a>
-                                </div>
-                                <div class="skills-section">
-                                    <i class="fab fa-html5 fa-4x fa-fw"></i>
-                                    <i class="fab fa-css3-alt fa-4x fa-fw"></i>
-                                    <i class="fab fa-js-square fa-4x fa-fw"></i>  
-                                    <i class="fab fa-sass fa-4x fa-fw"></i>   
-                                    <i class="fab fa-php fa-4x fa-fw"></i>                                           
-                                </div>
+                            <div class="col-2 gutter">
+                                <h3>Front-End Development</h3>
+                                <ul>
+                                    <li>Javascript</li>
+                                    <li>JQuery</li>
+                                    <li>HTML5</li>
+                                    <li>CSS3</li>
+                                    <li>SASS/SCSS</li>
+                                    <li>React(Novice)</li>
+                                    <li>Bootstrap</li>
+                                    <li>Wordpress</li>
+                                </ul>
+                                <h3>Front-End Toolkit</h3>
+                                <ul>
+                                    <li>Gulp/Grunt</li>
+                                    <li>Visual Studio Code</li>
+                                    <li>Git</li>
+                                    <li>Github</li>
+                                    <li>SCRUM/Agile Methodologies</li>
+                                </ul>
+                            </div>
+                            <div class="col-2 gutter">
+                                <h3>Back-end Development</h3>
+                                <ul>
+                                    <li>PHP</li>
+                                    <li>MySQL</li>
+                                    <li>Database Queries</li>
+                                    <li>Database creation</li>
+                                    <li>AJAX</li>
+                                </ul>
+                                <h3>Back-end Toolkit</h3>
+                                <ul>
+                                    <li>phpMyAdmin</li>
+                                    <li>JSON</li>
+                                </ul>
                             </div>
                         </div>  
                     </div>
                 </section>
-            </div>
-            <div class="slide" data-anchor="slide2">
-                <section id='project-work'>
-                    <div class="container-content mute">
-                        <span class="fancy">Guiding Workflow</span>
-                        <p class="white">A rock solid workflow is an essential piece to the development process. Workflow allows creativity within confines and rigid process with expansive ideation. Development should be a process that is in continuous motion and in cyclic patterns.</p>
-                        <p class="citrus">Hover/Touch the cards below for more information about my workflow</p>
-                        <div class="principle-container">
-                            <div class="principle-card">
-                                <p>01</p>
-                                <div class="rotate"></div>
-                                <p class="citrus">Observation</p>
-                                <p class="principle-num">01</p>
-                                <span class="overlay">
-                                    <p class="principle-num-light">01</p>
-                                    <span>Determine who should be observed, who should do the observing, and what behavior should be observed.</span>
-                                </span>
-                            </div>
-                            <div class="principle-card">
-                                <p>02</p>
-                                <div class="rotate"></div>
-                                <p class="citrus">Data Capture</p>
-                                <p class="principle-num">02</p>
-                                <span class="overlay">
-                                    <p class="principle-num-light">02</p>
-                                    <span>Attempt to interpret user actions using actionable questions and testing.</span>
-                                </span>
-                            </div>
-                            <div class="principle-card">
-                                <p>03</p>
-                                <div class="rotate"></div>
-                                <p class="citrus">Analyze</p>
-                                <p class="principle-num">03</p>
-                                <span class="overlay">
-                                    <p class="principle-num-light">03</p>
-                                    <span>Analyze and organize all data collected from previous step</span>
-                            </div>
-                            <div class="principle-card">
-                                <p>04</p>
-                                <div class="rotate"></div>
-                                <p class="citrus">Brainstorm</p>
-                                <p class="principle-num">04</p>
-                                <span class="overlay">
-                                    <p class="principle-num-light">04</p>
-                                    <span>Develop strategies and problem solutions to implement in the design</span>
-                                </span>
-                            </div>
-                            <div class="principle-card">
-                                <p>05</p>
-                                <div class="rotate"></div>
-                                <p class="citrus">Prototype</p>
-                                <p class="principle-num">05</p>
-                                <span class="overlay">
-                                    <p class="principle-num-light">05</p>
-                                    <span>Bring ideas from the brainstorming sessions to life. Problem solutions are put to the test.</span>
-                                </span>
-                            </div>
-                            <div class="principle-card">
-                                <p>06</p>
-                                <div class="rotate"></div>
-                                <p class="citrus">Deploy</p>
-                                <p class="principle-num">06</p>
-                                <span class="overlay">
-                                    <p class="principle-num-light">06</p>
-                                    <span>Deploy the approved design and start the process over again.</span>
-                                </span>
-                            </div>
-                        </div>
+        <section class="portfolio-container">
+                <br><br><span class="fancy center">Projects</span>
+
+                <div class="portfolio-row">			
+                
+                    <div class="portfolio-col-small">
+                        <img src="https://images.unsplash.com/photo-1534126511673-b6899657816a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0257a58f057ab851410be81356f6591d&auto=format&fit=crop&w=2100&q=80" alt="">
                     </div>
-                </section>
-            </div>
-        </div>
-        <div class="section center main-section">
-            <section id="case-studies">
-                <div class="container-content center">
-                    <span class="fancy">Selected Case Studies</span>
-                    <div class="projects" id="projects">
-                        
-                        <a href="projects/embark.html" class="project-card-alternate" data-id='ux'>
-                            <div class="projects-img">
-                                    <img src="img/travel10.jpg" />
-                            </div>
+                    
+                    <div class="portfolio-col-large">
+                            <h2>Leather Machine Co.</h2>
+                            <p>Leather Machine Co. sells and services top quality leather working machinery for the Leather and Tack Trades. They provide top quality leather sewing machines made especially for the leather worker. Leather Machine Co is known for their expertise and service.</p><br>
+                            <a href="projects/lmc.html" class="button">See Case Study</a>
+                            <a href="" class="gutter"><i class="fas fa-desktop fa-fw"></i> Website</a>
+                            <a href="" ><i class="fas fa-code fa-fw"></i> Source Code</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-row mute white-text">
+                    <div class="portfolio-col-small">
+                        <img src="img/embark.jpeg" alt="">
+                    </div>
+                    <div class="portfolio-col-large">
+                        <h2>EMBARK Travel Services</h2>
+                        <p>Embark grew out of an interaction design assignment from UTA's Communication Technology Multimodal Design course, then completed in the User Experience course. Our prompt called for an intelligent system that increases awareness and cultural exploration that would meet the needs of target users at a specific location. We arrived at our final concept through contextual research, iterative research and prototyping.<br><br>
+
+                          ​                              
+                        Our final deliverable for the first semester was a brand and style guide, a working prototype, and a promotional video. For the second semester our final deliverable was a full UX research workup (user personas, user journeys, Axure prototyping, development, user testing, and QA/QC). Our group utilized HTML, SASS, Javascript, and jQuery.</p><br>
+                        <a href="projects/embark.html" class="button">See Case Study</a>
+                        <a href="" class="gutter"><i class="fas fa-desktop fa-fw"></i> Website</a>
+                        <a href="" ><i class="fas fa-code fa-fw"></i> Source Code</a>
+
         
-                            <div class="text-content">
-                                <div class="content">
-                                    <span class="eyebrow">EMBARK | TRAVEL SERVICES</span>
-                                    <h2>User Experience</h2>
-                                </div>
-                                <div class="footer">
-                                    <p class="caption">
-                                        <span class="tag">UX</span>
-                                        <span class="tag">Web Design</span>
-                                        <span class="tag">Logo Design</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="projects/fishcreek.html" class="project-card-alternate" data-id='web'>
-                            <div class="projects-img">
-                                <img src="http://fishcreek.bryandavid.uta.cloud/img/9.jpg" />
-                            </div>
-                            <div class="text-content">
-                                <div class="content">
-                                    <span class="eyebrow">FISH CREEK | ANIMAL HOSPITAL</span>
-                                    <h2>Web Design</h2>
-                                </div>
-                                <div class="footer">
-                                    <p class="caption">
-                                        <span class="tag">Web Design</span>
-                                        <span class="tag">Visual Design</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="projects/bff.html" class="project-card-alternate"data-id='graphic'>
-                            <div class="projects-img">
-                                <img src="http://omega.uta.edu/~bdh3090/ctec4309/bff/img/homeBanner.jpeg" />
-                            </div>
-                            <div class="text-content">
-                                <div class="content">
-                                    <span class="eyebrow">BFF ASIAN BAR AND GRILL</span>
-                                    <h2>Web Design</h2>
-                                </div>
-                                <div class="footer">
-                                    <p class="caption">
-                                        <span class="tag">PHP</span>
-                                        <span class="tag">Web Design</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
                     </div>
-                    <!-- <div><a class="button" href="portfolio.html">See my complete portfolio</a></div>  -->
+                    </div>
+                </div>
+        
+                <div class="portfolio-row">			
+                    
+                    <div class="portfolio-col-small">
+                        <img src="img/fishcreek.png" alt="">
+                    </div>
+        
+                    <div class="portfolio-col-large">
+                            <h2>Fish Creek Animal Hospital</h2>
+                            <p>Fish Creek Animal Hospital was a project as part of the Web Design and Development 2 course at UTA. The project focused on taking a website from start to finish utilizing prototypes, HTML, CSS, and Javascript.</p><br>
+                            <a href="projects/fishcreek.html" class="button">See Case Study</a>
+                            <a href="" class="gutter"><i class="fas fa-desktop fa-fw"></i> Website</a>
+                            <a href="" ><i class="fas fa-code fa-fw"></i> Source Code</a>
+
+                    </div>
+                </div>
+        
+                <div class="portfolio-row mute white-text">
+                    <div class="portfolio-col-small">
+                        <img src="img/bff.jpeg" alt="">
+                    </div>
+                    <div class="portfolio-col-large">
+                        <h2>BFF Asian Sports Bar & Grill</h2>
+                        <p>BFF Asian Sports Bar and Grill is a restaurant located in North Arlington. My group was tasked with a redesign of the current website utilizing Internet Marketing skills and PHP to perform basic backend tasks and includes.</p><br>
+                        <a href="projects/embark.html" class="button">See Case Study</a>
+                        <a href="" class="gutter"><i class="fas fa-desktop fa-fw"></i> Website</a>
+                        <a href="" ><i class="fas fa-code fa-fw"></i> Source Code</a>
+
+        
+                    </div>
                 </div>
             </section>
-        </div>
 
     <footer id="footer">
-        <div class="col-2">
-            <h4 class="citrus">Popular Links</h4>
-
-            <ul>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Embark</a></li>
-                <li><a href="#">Fish Creek</a></li>
-            </ul>
-        </div>
-        <div class="col-2 center">
-            <h4 class="citrus">Find Me</h4>
-        </div>
-        <div class="col-2">
-            
-        </div>
-        <figure>
-            <img id="footer-logo" src="img/bh_logo_orange.png" alt="">
-        </figure>
+        
     </footer>
-
-    <ul id="myMenu">
-        <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>
-        <li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
-        <li data-menuanchor="thirdPage"><a href="#thirdPage">Third section</a></li>
-        <li data-menuanchor="fourthPage"><a href="#fourthPage">Fourth section</a></li>
-    </ul>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src='js/main.js'></script>
-    <!-- <script src="js/fullpage.js"></script>
-    <script>
-        new fullpage('#fullpage', {
-            sectionsColor: ['white', '#363B44', 'transparent', '#5E6472'],
-            slidesNavigation: true
-        });
-    </script> -->
+    
 </body>
 </html>

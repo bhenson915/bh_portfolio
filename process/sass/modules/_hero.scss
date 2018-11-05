@@ -91,13 +91,17 @@
 .main-section-image {
     text-align: center;
     min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     img{
         max-height: 100%;
     }
 }
 
-@media only screen and (max-width: 1120px){
+@media only screen and (max-width: 768px){
     .main-section-container{
+        padding-top: 100px;
         flex-direction: column-reverse;
         justify-content: space-between;
     }

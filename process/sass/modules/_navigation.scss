@@ -17,6 +17,8 @@
 
     .main-nav {
         display: flex;
+        justify-content: flex-end;
+        align-items: center;
       
       ul{
         background: rgba(255,255,255,.5);

@@ -31,11 +31,45 @@
                         <li><a href="photography.html">Photography</a></li>
                     </ul>
                 </li>
-                <li><a href="#" class="button" id="contact-btn">Contact</a></li>
+                <li><a href="#"><button class="button primary" id="contact-btn">Contact</button></a></li>
             </ul>
         </div>
         <i id="btn-menu" class="fas fa-bars"></i>
-	</div>
+    </div>
+
+    <div class="container center fancy" id="projects-javascript">
+        <h3 class="fancy">Javascript Projects</h3>
+        <p>30 days of Javascript</p>
+    </div>
+    
+    <div class="panels white-text">
+        <div class="panel panel6">
+            <p>Let's</p>
+            <p>Drums</p>                
+            <a href="#" class="button">Let's Rock</a>
+            
+        </div>
+        <div class="panel panel7">
+            <p>Tick</p>
+            <p>Clock</p>
+            <p>Tock</p>
+        </div>
+        <div class="panel panel8">
+            <p>And</p>
+            <p>Click</p>
+            <p>Drag</p>
+        </div>
+        <div class="panel panel9">
+            <p>Speed</p>
+            <p>Video</p>
+            <p>Controller</p>
+        </div>
+        <div class="panel panel10">
+            <p>A</p>
+            <p>Whack</p>
+            <p>Mole</p>
+        </div>
+    </div>
 	
 	<section class="portfolio-container">
         <div class="portfolio-row">			
@@ -47,7 +81,7 @@
             <div class="portfolio-col-large">
                     <h2>Leather Machine Co.</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit eaque nemo sunt doloremque modi repellendus quam fuga qui dolor magnam ab eveniet omnis similique dolore ipsum, sed fugiat reprehenderit deserunt!</p><br>
-                    <a href="projects/lmc.html" class="button">See Case Study</a>
+                    <a href="projects/lmc.html"><button class="button primary">See Case Study</button></a>
             </div>
         </div>
         
@@ -58,7 +92,7 @@
 			<div class="portfolio-col-large">
 				<h2>EMBARK Travel Services</h2>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit eaque nemo sunt doloremque modi repellendus quam fuga qui dolor magnam ab eveniet omnis similique dolore ipsum, sed fugiat reprehenderit deserunt!</p><br>
-				<a href="projects/embark.html" class="button">See Case Study</a>
+				<a href="projects/embark.html"><button class="button primary">See Case Study</button></a>
 
 			</div>
 			</div>
@@ -73,7 +107,7 @@
             <div class="portfolio-col-large">
                     <h2>Fish Creek Animal Hospital</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit eaque nemo sunt doloremque modi repellendus quam fuga qui dolor magnam ab eveniet omnis similique dolore ipsum, sed fugiat reprehenderit deserunt!</p><br>
-                    <a href="projects/fishcreek.html" class="button">See Case Study</a>
+                    <a href="projects/fishcreek.html" ><button class="button primary">See Case Study</button></a>
             </div>
 		</div>
 
@@ -84,7 +118,7 @@
 			<div class="portfolio-col-large">
 				<h2>BFF Asian Sports Bar & Grill</h2>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit eaque nemo sunt doloremque modi repellendus quam fuga qui dolor magnam ab eveniet omnis similique dolore ipsum, sed fugiat reprehenderit deserunt!</p><br>
-				<a href="projects/embark.html" class="button">See Case Study</a>
+				<a href="projects/embark.html"><button class="button primary">See Case Study</button></a>
 
 			</div>
 		</div>
@@ -93,7 +127,7 @@
 			<div class="portfolio-col-large">
 				<h2>LiftVR</h2>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit eaque nemo sunt doloremque modi repellendus quam fuga qui dolor magnam ab eveniet omnis similique dolore ipsum, sed fugiat reprehenderit deserunt!</p><br>
-				<a href="projects/fishcreek.html" class="button">See Case Study</a>
+				<a href="projects/fishcreek.html"><button class="button primary">See Case Study</button></a>
 
 			</div>
 			<div class="portfolio-col-small">
@@ -127,11 +161,27 @@
 
     
     
-
+    <script>
+        const panels = document.querySelectorAll('.panel');
+    
+        function toggleOpen() {
+            console.log('Hello');
+            this.classList.toggle('open');
+        }
+    
+        function toggleActive(e) {
+            console.log(e.propertyName);
+            if (e.propertyName.includes('flex')) {
+            this.classList.toggle('open-active');
+            }
+        }
+    
+        panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+        panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+        </script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src='js/main.js'></script>
-    <script src='js/tilt.jquery.js'></script>
 
 </body>
 </html>

@@ -10,6 +10,12 @@
     &:first-of-type{
       padding-top: 8em;
     }
+    &:nth-of-type(even) a{
+      color: white;
+      &:hover{
+        color: $citrus;
+      }
+    }    
 }
 
 .portfolio-col-small {
@@ -24,6 +30,23 @@
 .portfolio-col-large {
     padding: 2em 4em;
     width: 60%;
+    }
+
+@media screen and (max-width: 1080px){
+  .portfolio-row{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 800px){
+  
+  .portfolio-col-large{
+    width: 99%;
+    padding: 0;
+  }
+  .portfolio-col-small{
+    width: 99%;
+  }
 }
 
 .icon-scroll,
@@ -82,5 +105,18 @@
     opacity: 0;
     -webkit-transform: translateY(46px);
             transform: translateY(46px);
+  }
+}
+
+.skills {
+  text-align: left;
+  h3{
+    color: $citrus;
+    font-weight: 500;
+  }
+  ul {
+    margin: 10px 0 0;
+    padding: 0;
+    color: white;
   }
 }
