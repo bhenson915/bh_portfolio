@@ -239,7 +239,16 @@
         color: $citrus;
         font-family: 'Kaushan Script';
         font-size: 36px;
-        margin: 0 0 1em;
+        margin: 1em 0;
+        height: 100%;
+        display: block;
+    }
+
+    .heading{
+      color: $citrus;
+        font-family: 'Kaushan Script';
+        font-size: 36px;
+        padding: 1em 0;
         height: 100%;
         display: block;
     }
@@ -501,11 +510,7 @@
 }
 
 .about-content {
-  color: #ffffff;
   text-align: left;
-  h1, h2, h3, h4, p {
-    color: white;
-  }
 }
 
 
@@ -520,7 +525,6 @@
   padding: 0;
   border-radius: 50%;
   overflow: hidden;
-  margin-right: 4em;
   border: 1px solid transparent;
   transition: all 300ms ease-in-out;
   &:hover {
@@ -548,7 +552,6 @@
 
 .skills-section{
   display: block;
-  text-align: left;
   margin-top: 3em;
   color: $citrus;
 }

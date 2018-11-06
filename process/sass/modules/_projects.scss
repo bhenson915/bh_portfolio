@@ -248,12 +248,12 @@
     }
 }
 
-#projects-javascript{
+.projects-javascript{
   padding-top: 100px;
 }
 
 .panels {
-  min-height:100vh;
+  min-height:50vh;
   overflow: hidden;
   display: flex;
 }
@@ -275,6 +275,16 @@
   justify-content: center;
   display: flex;
   flex-direction: column;
+}
+
+@media only screen and (max-width: 1200px){
+  .panels{
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .panel {
+    overflow: hidden;
+  }
 }
 
 

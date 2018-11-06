@@ -15,38 +15,40 @@
 <body>
 
     <div class="navigation-container">
-            <div class="logo" id="logo">
-                <a href="index.html"><img src="img/bh_logo_orange.png" alt="Bryan Henson's Logo"></a>
-            </div>
-            <div class="nav-list">
-                <ul class="main-nav">
-                    <li><a href="index.html"><i class="fas fa-home"></i><ion-icon name="airplane"></ion-icon></a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="about.html">Skills</a></li>
-                    <li id="drop-portfolio"><a href="portfolio.html" >Portfolio</a>
-                        <ul class="dropdown">
-                            <li><a href="portfolio.html">Development</a></li>
-                            <li><a href="#">Branding</a></li>
-                            <li><a href="photography.html">Photography</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#" class="button" id="contact-btn">Contact</a></li>
-                </ul>
-            </div>
-            <i id="btn-menu" class="fas fa-bars"></i>
+        <div class="logo" id="logo">
+            <a href="index.html"><img src="img/bh_logo_orange.png" alt="Bryan Henson's Logo"></a>
         </div>
+        <div class="nav-list">
+            <ul class="main-nav">
+                <li><a href="index.html"><i class="fas fa-home"></i><ion-icon name="airplane"></ion-icon></a></li>
+                <li id="drop-portfolio"><a href="portfolio.html" >Portfolio</a>
+                    <ul class="dropdown">
+                        <li><a href="portfolio.html">Development</a></li>
+                        <li><a href="branding.html">Branding</a></li>
+                        <li><a href="photography.html">Photography</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                
+                <li><a href="#" id="contact-btn"><button class="button primary">Contact</button> </a></li>
+            </ul>
+        </div>
+        <i id="btn-menu" class="fas fa-bars"></i>
+    </div>
 
     <section class="container center">
-        <div class="container-content mute">
-            <span class="fancy">About Me</span>
+        <div class="container-content">
+            <span class="heading">About Me</span>
             <div class="flex-grid">
-                <div class="col-3 about-img">
-                    <a href="assets/resume.pdf"><img src="img/Headshot.jpg" alt=""></a>
-                </div>
-                <div class="col-3">
+                
+                <div class="col-6">
                     <div class="about-content">
-                        <h3>Hi there!</h3>
-                        <p>I'm Bryan Henson a front-end developer based in the Dallas/Fort Worth area. I have over 10  years of experience in a design environment. I am graduating from the University of Texas at Arlington's Communication Technology program in December of 2018.</p>
+                        <div class="about-img center">
+                        <a href="assets/resume.pdf"><img src="img/Headshot.jpg" alt=""></a>
+
+                        </div>
+
+                        <p>I'm Bryan Henson, a front-end developer based in the Dallas/Fort Worth area. I have over 10  years of experience in a design environment. I am graduating from the University of Texas at Arlington's Communication Technology program in December of 2018.</p>
                         <p>I am passionate about front-end architecture, performance, scalable code and empathetic design practices.</p>
 
                         <p>My unique background in user interface and graphic design derives from my training and experience as a United States Soldier and student at the University of Texas at Arlington. For 7 years, the U.S. Army provided a plethora of challenging and austere projects with high expectations and short deadlines. </p>
@@ -56,7 +58,7 @@
                         <p>My published work is also recognized by multiple Department of Defense platforms; including websites, pamphlets, posters, logos, and magazines. I am a senior at the University of Texas at Arlington studying Communication Technology. I bring my expertise and wealth of knowledge about empathetic design to help businesses confidently build their communication with internal and external users</p>  
                                            
                     </div>
-                    <div class="skills-section">
+                    <div class="skills-section center">
                         <i class="fab fa-html5 fa-4x fa-fw"></i>
                         <i class="fab fa-css3-alt fa-4x fa-fw"></i>
                         <i class="fab fa-js-square fa-4x fa-fw"></i>  
@@ -66,6 +68,7 @@
                 </div>
             </div>  
         </div>
+
         <div class="slide" data-anchor="slide2">
                 <section id='project-work'>
                     <div class="container-content mute">
@@ -138,8 +141,6 @@
             </div>
         </div>
     </section>
-
-    
 
     <div id="aboutVideo" class="container tools">
         <div class="wrapper">
