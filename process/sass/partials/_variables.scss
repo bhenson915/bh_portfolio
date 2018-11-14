@@ -8,12 +8,66 @@ $mute: #363B44;
 $mute-comp: complement($mute);
 $cloudy: #5E6472;
 
+$blue: rgb(11, 83, 148);
+$bluegreen: rgb(69, 129, 142);
+$orange: rgb(199, 97, 33);
+$green: rgb(56, 118, 29);
+$purple: rgb(53, 28, 117);
+$pink: rgb(166, 77, 121);
+
 .citrus {
     color: $citrus;
 }
 .white {
     color: white;
 }
+
+.blue {
+    background: $blue;
+    h1{
+        color: white;
+    }
+}
+.bluegreen {
+    background: $bluegreen;
+    h1{
+        color: white;
+    }
+
+}
+.orange {
+    background: $orange;
+    h1{
+        color: white;
+    }
+
+}
+.green {
+    background: $green;
+    h1{
+        color: white;
+    }
+
+}
+.purple {
+    background: $purple;
+    h1{
+        color: white;
+    }
+
+}
+.pink {
+    background: $pink;
+    h1{
+        color: white;
+    }
+
+}
+
+.fa-check {
+    color: $green;
+}
+
 
 //lists
 
