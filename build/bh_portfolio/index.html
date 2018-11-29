@@ -29,7 +29,7 @@
                 </li>
                 <li><a href="about.html">About</a></li>
                 
-                <li><a href="#" id="contact-btn"><button class="button primary">Contact</button> </a></li>
+                <li><a href="#" id="modal_open"><button class="button primary">Contact</button> </a></li>
             </ul>
         </div>
         <i id="btn-menu" class="fas fa-bars"></i>
@@ -183,8 +183,35 @@
                 </div>
             </section>
 
+            <div id="modal_wrapper">
+                    <div id="modal_window">
+                    
+                        <div style="text-align: right;"><a id="modal_close" href="#">close <b>X</b></a></div>
+                        
+                        <p>Complete the form below to send an email:</p>
+                        
+                        <form id="modal_feedback" method="POST" action="#" accept-charset="UTF-8">
+                        <p><label>Your Name<strong>*</strong><br>
+                        <input type="text" autofocus required size="48" name="name" value=""></label></p>
+                        <p><label>Email Address<strong>*</strong><br>
+                        <input type="email" required title="Please enter a valid email address" size="48" name="email" value=""></label></p>
+                        <p><label>Subject<br>
+                        <input type="text" size="48" name="subject" value=""></label></p>
+                        <p><label>Enquiry<strong>*</strong><br>
+                        <textarea required name="message" cols="48" rows="8"></textarea></label></p>
+                        <p><input type="submit" name="feedbackForm" value="Send Message"></p>
+                        </form>
+                    
+                    </div> <!-- #modal_window -->
+                </div>
+
     <footer id="footer">
-        
+        <div class="center white-text">
+            <a href="https://github.com/bhenson915" class="white-text"><i class="fab fa-github-square fa-lg fa-fw"></i></a>            
+            <a href="https://www.facebook.com/bryan.henson.14 " class="white-text"><i class="fab fa-facebook fa-lg fa-fw"></i></a> 
+            <a href="https://www.instagram.com/bryan.d.henson/?hl=en" class="white-text"><i class="fab fa-instagram fa-lg fa-fw"></i></a> 
+            <a href="https://twitter.com/bhensondesign" class="white-text"><i class="fab fa-twitter-square fa-lg fa-fw"></i></a> 
+        </div>
     </footer>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
